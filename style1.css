@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+	background-image: radial-gradient(circle, #051937, #171228, #190a1a, #12040d, #000000);
+}
+
+@media (max-width:650px) {
+
+*{
+    padding: 0;
+    padding-right: 1.25px;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+	background-image: radial-gradient(circle, #051937, #171228, #190a1a, #12040d, #000000);
+}
+
+
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 100%;
+
+}
+.home img{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 100%;
+  max-width: 100%;
+}
+.home img{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 100%;
+  position: relative;
+  height: 150px;
+  width:220px;
+  align-items: center; 
+
+}
+.home h2{
+  width: 100%;
+    color: whitesmoke;
+    font-family: 'Genos', sans-serif;
+    padding-right: 5px;  
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+  }
+.home p{
+  width: 100%;
+    color: yellow;
+    font-family: 'Kanit', sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+  }
+}
+
+/* Home Section */
+
+.title h1{
+    width:100%;
+    padding: 20px;
+    text-align: center;
+    color: #00CDAE;
+    font-family: 'Chicle', cursive;
+    font-size: 50px;
+    background-size: cover;
+}
+
+.home{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.home img{
+    width:100%;
+    height: 500px;
+    width:650px;
+    padding: 5px;
+    align-items: center; 
+    position: relative;
+}
+
+.home h2{
+  width: 100%;
+    color: whitesmoke;
+    font-family: 'Genos', sans-serif;
+    font-size: 60px;
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.home p{
+  width: 100%;
+    color: yellow;
+    font-family: 'Kanit', sans-serif;
+    padding: 5px;
+    font-size: 20px;
+    vertical-align: middle;
+    position: relative;
+    padding: 0 0 0 20px;
+}
+
+
+/*Line breaker animation section*/
+.hr-container {
+  width:100%;
+    position: relative;
+    width: 100%;
+    height: 40px;
+  }
+  
+hr {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    border: #000000;
+
+  }
+
+.left-to-right {
+    left: 0;
+    animation: hr-animation-ltr 6s ease-in-out infinite;
+  }
+  
+.right-to-left {
+    right: 0;
+    top: 30px;
+    animation: hr-animation-rtl 6s ease-in-out infinite;
+  }
+  
+  @keyframes hr-animation-ltr {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    80% {
+        transform: translateX(0px);
+      }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes hr-animation-rtl {
+    0% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    80% {
+        transform: translateX(0px);
+      }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+/* Tracker Section */
+
+.analysis {
+    width:100%;
+    padding: 20px;
+    color: whitesmoke;
+    font-family: 'Genos', sans-serif;
+    font-size: 30px;
+}
+.analysis h1{
+    color: yellow;
+    font-family: 'Kanit', sans-serif;
+    font-size:40px;
+    
+}
+
+/*Top 10 Companies with high layoff*/
+
+.q1{
+  width:100%;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: 'Genos', sans-serif;
+  font-size: 30px;
+  justify-content: space-between;
+
+}
+
+.q1 h1{
+  color: yellow;
+  font-family: 'Kanit', sans-serif;
+  font-size:40px;
+}
+
+.img1 img{
+  padding-top: 10px;
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.img2 img{
+  padding-top: 10px;
+  width: 50%;
+  position: relative;
+  float: right;
+}
+.text{
+  width: 100%;
+}
+.text ol{
+  padding-left: 20px;
+}
+
+
+/*Top 10 Locations with high layoff*/
+
+.q2{
+  width:100%;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: 'Genos', sans-serif;
+  font-size: 30px;
+  justify-content: space-between;
+}
+.q2 h1{
+  color: yellow;
+  font-family: 'Kanit', sans-serif;
+  font-size:40px;
+}
+.q2 img{
+  width: 100%;
+  position: relative;
+  padding-top: 10px;
+}
+
+
+/*Top 10 Industries with high layoff*/
+.q3{
+  width:100%;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: 'Genos', sans-serif;
+  font-size: 30px;
+  justify-content: space-between;
+}
+.q3 h1{
+  color: yellow;
+  font-family: 'Kanit', sans-serif;
+  font-size:40px;
+}
+.img4 img{
+  padding-top: 10px;
+  padding-left: 5px;
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.img5 img{
+  padding-top: 10px;
+  padding-right: 5px;
+  width: 50%;
+  position: relative;
+  float: right;
+}
+.img6 img{
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 100%;
+  height:320px;
+  position: relative;
+}
+
+/*Year wise layoff*/
+.q4{
+  width:100%;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: 'Genos', sans-serif;
+  font-size: 30px;
+  justify-content: space-between;
+}
+.q4 h1{
+  color: yellow;
+  font-family: 'Kanit', sans-serif;
+  font-size:40px;
+}
+.img7 img{
+  padding-top: 10px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height:30%;
+
+}
+.img8 img{
+  padding-top: 10px;
+  padding-left: 5px;
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.img9 img{
+  padding-top: 10px;
+  padding-right: 5px;
+  width: 50%;
+  position: relative;
+  float: right;
+
+}
+.img10 img{
+  padding-top: 10px;
+  padding-left: 5px;
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.img11 img{
+  padding-top: 10px;
+  padding-right: 5px;
+  width: 50%;
+  position: relative;
+  float: right;
+}
+
+/*Top 8 Countries with High layoff*/
+
+.q5{
+  width:100%;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: 'Genos', sans-serif;
+  font-size: 30px;
+  justify-content: space-between;
+
+}
+
+.q5 h1{
+  color: yellow;
+  font-family: 'Kanit', sans-serif;
+  font-size:40px;
+}
+
+.img12 img{
+  padding-top: 10px;
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.img13 img{
+  padding-top: 10px;
+  width: 50%;
+  position: relative;
+  float: right;
+}
+
+/*Which stage of company has high layoff*/
+.q6{
+  width:100%;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: 'Genos', sans-serif;
+  font-size: 30px;
+  justify-content: space-between;
+
+}
+
+.q6 h1{
+  color: yellow;
+  font-family: 'Kanit', sans-serif;
+  font-size:40px;
+}
+
+.img14 img{
+  padding-top: 10px;
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.img15 img{
+  padding-top: 10px;
+  width: 50%;
+  position: relative;
+  float: right;
+}
+
+/*Maang analysis*/
+
+.q7{
+  width:100%;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: 'Genos', sans-serif;
+  font-size: 30px;
+  justify-content: space-between;
+
+}
+
+.q7 h1{
+  color: yellow;
+  font-family: 'Kanit', sans-serif;
+  font-size:40px;
+}
+
+.img16 img{
+  padding-top: 10px;
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.img17 img{
+  padding-top: 10px;
+  width: 50%;
+  position: relative;
+  float: right;
+}
+/*Conclusion*/
+
+.conclusion{
+  width:100%;
+  padding: 20px;
+  color: whitesmoke;
+  font-family: 'Genos', sans-serif;
+  font-size: 30px;
+  justify-content: space-between;
+
+}
+
+.conclusion h1{
+  color: yellow;
+  font-family: 'Kanit', sans-serif;
+  font-size:40px;
+}
+
+
+/*footer*/
+.footer{
+  width:100%;
+  height: 25px;
+  background: yellow;
+  position: relative;
+}
+.footer p{
+  text-align: center;
+  padding-top: 3px;
+}

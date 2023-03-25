@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layoff Tracker</title>
+
+
+        <!--css linking-->
+        <link rel="stylesheet" type="text/css" href="style1.css">
+
+        <!--Css media query linking-->
+        <link rel="stylesheet" media="mediatype and|not|only (expressions)">
+
+        <!--Title font linking-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+
+        <!--Sub heading linking-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap" rel="stylesheet">
+        <!-- font-family: 'Kanit', sans-serif; -->
+
+        <!--para font linking-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Genos:wght@200&display=swap" rel="stylesheet">
+        <!-- font-family: 'Genos', sans-serif; -->
+
+
+    </head>
+
+    <body>
+
+        <!--Title section-->
+        <div class="title">
+            <h1><b><i>INDUSTRY LAYOFF TRACKER 2020 - 2023</i></b></h1>
+        </div>
+
+        <!--Home image and text section-->
+        <div class="home">
+            <div class="homeimage">
+                <img src="images/indeximage.png" , alt="homeimage">
+            </div>
+            <div class="hometext">
+                <h2>Analysis of Industrial Trends</h2>
+                <p>Done by : <a href="https://karthikpersonalportfolio56.000webhostapp.com/" , target="_blank">Karthik</a></p>
+                <p>Credits : <a href="https://layoffs.fyi/" , target="_blank">https://layoffs.fyi/</a></p>
+            </div>
+        </div>
+
+        <!--break line animation -->
+        <div class="hr-container">
+            <hr class="left-to-right", style="background-color: red;">
+            <hr class="right-to-left", style="background-color: greenyellow;">
+          </div>
+
+        <!--Tracker section-->
+        <section>
+            <div class="analysis",style="width=100%">
+              <h1>Layoff Tracker</h1>
+            
+                  <p>In the year 
+                      <select id="yearDropdown" onchange="displayNumbers()">
+                      <option value="">--Please choose a year--</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                    </select> 
+                    Total number of employees that got laid-off is: <p id="selectedNumbers"></p>  
+                    and the total number of companies that got involved is: <p id="selectedCompany"></p>
+                  </p>
+            
+                  
+            
+            <script>
+            function displayNumbers() {
+            const selectedYear = document.getElementById("yearDropdown").value;
+            let selectedNumbers = "";
+            switch (selectedYear) {
+            case "2020":
+            selectedNumbers = "1,05,007";
+            selectedCompany = "634";
+            break;
+            case "2021":
+            selectedNumbers = "17,786";
+            selectedCompany = "44";
+            break;
+            case "2022":
+            selectedNumbers = "2,19,884";
+            selectedCompany = "1,205";
+            break;
+            case "2023":
+            selectedNumbers = "1,12,873";
+            selectedCompany = "309";
+            break;
+            default:
+            selectedNumbers = "Select an year from dropdown list";
+            selectedCompany = "Select an year from dropdown list";
+            }
+            document.getElementById("selectedNumbers").textContent = selectedNumbers;
+            document.getElementById("selectedCompany").textContent = selectedCompany;
+            }
+            
+            </script>
+            </div>
+                   </section>
+
+            <!--break line animation -->
+        <div class="hr-container">
+            <hr class="left-to-right", style="background-color: greenyellow;">
+            <hr class="right-to-left", style="background-color: red;">
+          </div>
+          
+
+          <!--Graphs and analysis section-->
+
+          <!--Top 10 Companies with high layoff-->
+          <div class="q1">
+            <h1>Top 10 Companies with high layoff :</h1>
+            <div class="img1">
+                <img src="images/newplot (1).png" , alt="q1-1">
+            </div>
+            <div class="img2">
+                <img src="images/newplot (2).png" , alt="q1-2">
+            </div>
+            <div class="text">
+                <p>Observations :</p>
+                <ol>
+                    <li> Amazon has laid off more employee's comapared to other comapnies , which includes 2 different industries from amazon itself (1.10K and other 8K).
+                  </li>
+                    <li> MAANG comapnies has laidoff more employees.</li>
+                </ol>
+            </div>
+          </div>
+
+          <!--break line animation -->
+        <div class="hr-container">
+            <hr class="left-to-right", style="background-color: red;">
+            <hr class="right-to-left", style="background-color: greenyellow;">
+          </div>
+
+          <!--Top 10 Locations with high layoff-->
+          <div class="q2">
+            <h1>Top 10 locations with high layoff :</h1>
+            <div class="img3">
+                <img src="images/newplot (3).png", alt="q2-1">
+            </div>
+            <div class="text">
+                <p >Observations:<br></p>
+                <ol>
+                    <li> SF bay area has most number of layoff counting more than 35k.</li>
+                    <li> Each location has high number of layoff including different industries.</li>
+                    <li> Consumer has 23k layoffs in SF bay area.</li>
+                    <li> Retail has 18k layoffs in Seattle.</li>
+          </ol>
+            </div>
+          </div>
+
+          <!--break line animation -->
+        <div class="hr-container">
+            <hr class="left-to-right", style="background-color: greenyellow;">
+            <hr class="right-to-left", style="background-color: red;">
+          </div>
+
+           
+          <!--Top 10 industries with high layoff-->
+          <div class="q3">
+            <h1>Top 10 industries with high layoff :</h1>
+          
+          <div class="img4">
+            <img src="images/newplot (4).png" ,alt="q3-1">
+          </div>
+          <div class="img5">
+            <img src="images/newplot (5).png" ,alt="q3-2">
+          </div>
+          <div class="img6">
+            <img src="images/newplot (6).png" ,alt="q3-3">
+          </div>
+          <div class="text">
+            <p >Observations:<br></p>
+          <ol>
+            <li> Consumer and retail industries got most affected in industries with layoff count.</li>
+              <li> Healthcare domain got affected due to sudden increase in people and managing resources, beds and medicine is also hectic.Digital resources was not popular that time.</li>
+              <li> Travel domain got afffected due to supply chain demand and sudden raise in covid-19 which resulted in lockdown , which also increased the demand for the products, which resulted in demand for sales and hardware industries.</li>
+              <li> USA has laid off more people when compared to other countries, and hold more laid off employees in all sector.</li>
+              <li> Since USA has more number of companies,they had laid off employees in almost all industries.</li>
+              <li> Transportation got affected in big cities too.Lockdown has increased the affected rate for transportation, which inturn directly affects logistics too.</li>
+              <li> Retail, consumer and finance are the top 3 industries that are affected the most due to covid-19.</li>
+              <li> Retail got affected due to transportation demand as it depends on hardware supply and since people lost jobs and they cant afford to buy anything.</li>
+              <li> Demand for the food industry is also high due to this lockdown.</li>
+              <li> Crypto got affected due to lockdown due to return of captial and people has no money to invest.</li>
+              <li> Healthcare got affected due to raise in demand for medicine,resource,hardware resources and physical resources(i.e,Doctors,nurses) to manage the overwhelming patients.</li>
+          </ol>
+          </div>
+        </div>
+
+        <!--break line animation -->
+        <div class="hr-container">
+            <hr class="left-to-right", style="background-color: red;">
+            <hr class="right-to-left", style="background-color: greenyellow;">
+          </div>
+
+          <!--Year wise layoff count-->
+          <div class="q4">
+            <h1>Year wise layoff's :</h1>
+            <div class="img7">
+                <img src="images/newplot (7).png" , alt="q4-1" >
+            </div>
+            <div class="img8">
+                <img src="images/newplot (61).png" , alt="q4-2">
+            </div>
+            <div class="img9">
+                <img src="images/newplot (8).png" , alt="q4-3">
+            </div>
+            <div class="img10">
+                <img src="images/newplot (9).png" , alt="q4-4">
+            </div>
+            <div class="img11">
+                <img src="images/newplot (10).png" , alt="q4-5">
+            </div>
+            <div class="text">
+                <p>Observations:<br></p>
+              <ol>
+                <li> Total number of employees laid off is 4,55,550.</li>
+                  <li> Year 2022 has laid off more employees comparing other years due to recovery phase of industries and to meet the business needs and investements,planning to layoff and cost cut 2022 has higher rate of layingoff people.</li>
+                  <li> Its only the 2nd month of 2023 but it already has a high rate of laid off employees, which is noticable.</li>
+              </ol>
+              </div>
+          </div>
+
+          <!--break line animation -->
+        <div class="hr-container">
+            <hr class="left-to-right", style="background-color: greenyellow;">
+            <hr class="right-to-left", style="background-color: red;">
+          </div>
+
+          <!--Top 8 Countries with High layoff-->
+          <div class="q5">
+            <h1>Top 8 countries with High layoff :</h1>
+            <div class="img12">
+                <img src="images/newplot (6) (1).png" , alt="q5-1">
+            </div>
+            <div class="img13">
+                <img src="images/newplot (11).png" , alt="q5-2">
+            </div>
+            <div class="text">
+                <p>Observations:<br></p>
+          <ol>
+            <li> As by reference there is no relationship between fun raised and layoff count by companies.</li>
+              <li> United states,Netherlands and India has more number of layoff count with respect to funds collected.</li>
+          </ol>
+            </div>
+          </div>
+
+          <!--break line animation -->
+        <div class="hr-container">
+            <hr class="left-to-right", style="background-color: red;">
+            <hr class="right-to-left", style="background-color: greenyellow;">
+          </div>
+
+        <!--Which stage of company has high layoff-->
+        <div class="q6">
+            <h1>Which stage of company has high layoff ? :</h1>
+            <div class="img14">
+                <img src="images/newplot (12).png" , alt="q6-1">
+            </div>
+            <div class="img15">
+                <img src="images/newplot (13).png" , alt="q6-2">
+            </div>
+            <div class="text">
+                <p>Observations:<br></p>
+          <ol>
+            <li> Stage Post-IPO has laidoff more as "Post-IPO" refers to the period after a company's initial public offering of stock.Since the market has crashed it has affected this stage more compared to other.</li>
+              <li> Funds raised for the stage Post-IPO is more as the shares by a company that's already listed on the stock exchange. It is done to acquire additional capital.so the fund raised for the IPO is higher.</li>
+              <li> Series C financing is one of the stages in the capital-raising process by a startup, so some startup's requires some fund to process, so it also has some considarable amount raised.</li>
+              <li> Lay-off happened in Post-IPO is comparatively higher compared to other sectors as most of the Industries falls in Post-IPO and retail and consumer as mentioned previously has highest rate of lay-off.</li>
+              <li> List of stages and how many companies that fall's under each category:<br>
+
+                Post-IPO ---> 274<br>
+                Seed ---> 59<br>
+                Series-A ---> 161<br>
+                Series-B ---> 266<br>
+                Series-C ---> 250<br>
+                Series-D ---> 181<br>
+                Series-E ---> 95<br>
+                Series-F ---> 43<br>
+                Series-G ---> 11<br>
+                Series-H ---> 14<br>
+                Series-I ---> 5<br>
+                Series-J ---> 3<br>
+                Unknown ---> 329<br>
+                Acquired ---> 131<br>
+                Private Equity ---> 34</li>
+          </ol>
+            </div>
+        </div>
+
+         <!--break line animation -->
+         <div class="hr-container">
+            <hr class="left-to-right", style="background-color: greenyellow;">
+            <hr class="right-to-left", style="background-color: red;">
+          </div>
+
+          <!--MAANG analysis-->
+          <div class="q7">
+            <h1>MAANG Analysis :</h1>
+            <div class="img16">
+                <img src="images/newplot (14).png" , alt="q7-1">
+            </div>
+            <div class="img17">
+                <img src="images/newplot (15).png" , alt="q7-2">
+            </div>
+            <div class="text">
+                <p>Observations:<br></p>
+          <ol>
+            <li> Total in together MAANG companies has laid-off 41655 employees out of 455550 which is 9.14% in total contributing to layoff.</li>
+              <li> Funds raised in year 2020 and 2021 has no count since these years were affected by covid-19 and year 2023 has small numbers in
+                 count as its the begining of this year and in 2022 the fund raised is higher and Meta is a provider of 
+                 social networking, advertising, and business insight solutions has raised more as the covid-19 as the 
+                 demand in entertainment and urging people who needs to watch social media and entertainment has raised, 
+                 which in turn contributing this and the development of meta in Metaverse also contributing this.</li>
+              <li> Amazon has laid off more employees to manage this inflation.<br> 
+                Amazon ---> 18,150<br>
+                Meta ---> 11,000<br>
+                Google ---> 12,000<br>
+                Netflix ---> 505<br>
+                </li>
+            </div>
+            </div>
+
+            <!--break line animation -->
+         <div class="hr-container">
+            <hr class="left-to-right", style="background-color: greenyellow;">
+            <hr class="right-to-left", style="background-color: red;">
+          </div>
+          <br>
+
+          <!--conclusion-->
+          <div class="conclusion">
+            <h1>Conclusion :</h1>
+            <p>Although layoffs can be a difficult decision for any organization to make, they can also have positive outcomes. By 
+              streamlining operations and refocusing resources, companies can become more efficient and better positioned for long-term success.
+               Additionally, laid-off employees may have the opportunity to explore new career paths and find positions that better align with
+                their goals and passions. While it may be a challenging transition in the short term, layoffs can ultimately lead to growth
+                 and new opportunities for both companies and employees.</p>
+          </div>
+
+          <!--break line animation -->
+         <div class="hr-container">
+          <hr class="left-to-right", style="background-color: red;">
+          <hr class="right-to-left", style="background-color: greenyellow;">
+        </div>
+        <br>
+
+          <!--footer section-->
+          <div class="footer">
+            <p><b>Created by  Karthik © 2023</b></p>
+          </div>
+
+    </body>
+</html>
