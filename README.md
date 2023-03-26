@@ -33,3 +33,4 @@ Then i started to frame the business requirement fixed the goal,objective and fr
 I Explored the data at first and then with data cleaning , Exploratory data analysis and decoded all the questions with a conclusion.
 
 For future improvements it is possible to make this project live and also can make a time series analysis on this as layoff predictions.
+I have not uploaded my python code for personal reasons.
