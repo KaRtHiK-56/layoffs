@@ -25,3 +25,11 @@ Feature selection is the process of selecting only the useful feature that will 
 
 
 Finally this project concludes a brief notes on why it is happening and what we can do to equip ourself with to overcome this layoff.
+
+
+Initially after the data was collected, I started to understand the data and decided what to do with the data.
+Then i started to frame the business requirement fixed the goal,objective and framed all the questions related to layoffs and started to solve it.
+
+I Explored the data at first and then with data cleaning , Exploratory data analysis and decoded all the questions with a conclusion.
+
+For future improvements it is possible to make this project live and also can make a time series analysis on this as layoff predictions.
